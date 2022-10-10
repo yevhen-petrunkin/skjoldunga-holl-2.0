@@ -1,0 +1,11 @@
+body {
+  background-color: $bg-color;
+  background-image: url('https://picsum.photos/id/1019/1500');
+  color: $font-color;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1.5px;
+  text-shadow: $text-shadow 2px 2px 2px;
+  font-size: 1em;
+}

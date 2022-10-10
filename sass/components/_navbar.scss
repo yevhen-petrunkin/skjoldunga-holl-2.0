@@ -1,0 +1,97 @@
+.nav {
+  @extend %section;
+  position: fixed;
+  width: 100%;
+  background-color: $bg-color;
+}
+
+.nav__navbar {
+  @extend %flex-center;
+  justify-content: space-around;
+}
+
+.navbar__logo {
+  @extend %link;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 4vw;
+  font-family: 'Gideon Roman', serif;
+  letter-spacing: 3px;
+  line-height: 1.25;
+  color: $border-color;
+
+  @media screen and (min-width: $mobileMin) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $tabletMin) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktopMin) {
+    font-size: 30px;
+  }
+}
+
+.navbar__menu {
+  @extend %list;
+  @extend %flex-center;
+  gap: 40px;
+
+  @media screen and (max-width: $mobileMax) {
+    display: none;
+  }
+}
+
+.navbar__link {
+  @extend %link;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: $border-color;
+}
+
+.header__heading {
+  padding-top: 128px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.header__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 7vw;
+  font-family: 'Gideon Roman', serif;
+  letter-spacing: 3px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $mobileMin) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: $tabletMin) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: $desktopMin) {
+    font-size: 80px;
+  }
+}
+
+.header__undertitle {
+  font-size: 4vw;
+
+  @media screen and (min-width: $mobileMin) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $tabletMin) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktopMin) {
+    font-size: 30px;
+  }
+}
